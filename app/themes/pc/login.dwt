@@ -1,0 +1,43 @@
+<!-- #BeginLibraryItem "/library/page_header2_nologin.lbi" --><!-- #EndLibraryItem -->
+ 
+
+
+
+ <div class="page-header">
+  <h2>系统登录<small></small></h2>
+</div>
+{if $error_str} 
+<div class="alert alert-error">
+<p> {$error_str}</p>
+		</div>
+{/if}
+<form class="form-horizontal" method='post' action="login.php">
+<input type='hidden'  name='login' value='doing' />
+<input type='hidden'  name='return_url' value='' />
+
+  <div class="control-group ">
+    <label class="control-label" for="inputEmail">账  号</label>
+    <div class="controls">
+      <input type="text" id="username" name="username" class='span3' value="">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputPassword">密  码</label>
+    <div class="controls">
+      <input type="password" id="" name="password" class='span3' value="">
+      
+    </div>
+  </div>
+
+  <div class="control-group">
+    <div class="controls">
+      <button type="submit" class="btn btn-success">登录</button>&nbsp;&nbsp;
+    </div>
+  </div>
+
+</form>
+ 
+
+
+<!-- #BeginLibraryItem "/library/page_footer2.lbi" --><!-- #EndLibraryItem --> 
+ 
